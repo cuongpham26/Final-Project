@@ -1,0 +1,59 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0 5px;
+  padding: 0;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+p {
+  color: rgb(102, 102, 102);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+ul, ol {
+  font-size: 1.6;
+}
+
+li {
+  color: rgb(102, 102, 102);
+  margin-bottom: 12px;
+
+}
