@@ -67,14 +67,16 @@ li {
 }
 
 img {
-  float: right;
-  width: 50px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .button-set {
   display: flex;
   margin-bottom: 10px;
-  }
+  justify-content: center;
+}
     
 .button {
   padding: 10px 20px;
