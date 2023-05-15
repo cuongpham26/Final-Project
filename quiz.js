@@ -34,7 +34,7 @@ function calculateScore(event)
         score += 1;
     }
 
-    alert("Your score is: " + score);
+    alert("Your score is " + score + " out of 6." );
 }
 
 // Attach the calculateScore function to the form's submit event
