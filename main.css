@@ -4,11 +4,13 @@ html {
 }
 
 body {
-  margin: 0 5px;
+  margin: 2px;
   padding: 0;
+  background-color: #F1F6F9;
 }
 
 nav ul {
+  margin: 0;
   padding: 0;
   list-style-type: none;
   flex: 2;
@@ -16,9 +18,12 @@ nav ul {
 }
 
 nav li {
+  padding: 2px;
   display: inline;
   text-align: center;
   flex: 1;
+  border: solid 1px #1F82BE;
+  border-collapse: collapse;
 }
 
 nav a {
@@ -26,26 +31,29 @@ nav a {
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: #212A3E;
 }
 
-nav a:hover {
+nav li:hover {
   background-color: #f2f2f2;
 }
 
 h1 {
   text-align: center;
   margin-top: 20px;
+  color: #212A3E;
 }
 
 h2 {
   margin-top: 40px;
+  color: #394867;
 }
 
 p {
   color: rgb(102, 102, 102);
   line-height: 1.6;
   margin-bottom: 20px;
+  color: #7B8485;
 }
 
 ul, ol {
@@ -55,5 +63,10 @@ ul, ol {
 li {
   color: rgb(102, 102, 102);
   margin-bottom: 12px;
+  color: #7B8485;
+}
 
+img {
+  float: right;
+  width: 50px;
 }

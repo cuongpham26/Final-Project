@@ -34,11 +34,6 @@ function calculateScore(event)
         score += 1;
     }
 
-    let q7Answer = document.querySelector('input[name="q6"]:checked').value;
-    if (q6Answer === 'd') {
-        score += 1;
-    }
-
     alert("Your score is: " + score);
 }
 
