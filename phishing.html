@@ -4,48 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Phishing</title>
-  <link rel="stylesheet" type="text/css" href="final_project.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
   <script src="phishing.js" defer></script>
-  <style>
-    .button-set {
-            display: flex;
-            margin-bottom: 10px;
-    }
-    .button {
-            padding: 10px 20px;
-            margin-right: 10px;
-            background-color: #e0e0e0;
-            border: none;
-            cursor: pointer;
-        }
-    .button.selected {
-      background-color: lightblue;
-    }
-
-    .hidden {
-      display: none;
-    }
-    .submit-button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            cursor: pointer;
-      }
-    
-    .message {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            padding: 10px;
-            background-color: #f1f1f1;
-            border: 1px solid #ccc;
-            display: none;
-            transition: opacity 0.3s ease-in-out;
-    }
-
-
-  </style>
 </head>
     <body>
     <h1>Phishing</h1>
@@ -72,7 +32,7 @@
     </map>
     <div id="netflix" class="message">
       http://netflixx.com/signinsettings
-  </div>
+    </div>
     <div class="button-set">
       <button class="button" value="phishing1" onclick="selectButton(this)">Phishing</button>
       <button class="button" value="safe1" onclick="selectButton(this)">Safe</button>
