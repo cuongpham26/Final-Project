@@ -1,77 +1,100 @@
-html {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
-}
 
 body {
-  margin: 2px;
+  font-family: Arial, sans-serif;
+  margin: 0;
   padding: 0;
-  background-color: #F1F6F9;
+  background-color: #252b3b;
+  color: #ffffff;
+}
+
+
+nav {
+  background-color: #1a2030;
+  padding: 10px;
+  margin: 0px 100px;
 }
 
 nav ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  flex: 2;
-  display: flex;
 }
 
-nav li {
-  padding: 2px;
-  display: inline;
-  text-align: center;
-  flex: 1;
-  border: solid 1px #1F82BE;
-  border-collapse: collapse;
-}
-
-nav a {
+nav ul li {
   display: inline-block;
-  font-size: 2rem;
-  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #ffffff;
   text-decoration: none;
-  color: #212A3E;
+  padding: 5px 10px;
 }
 
-nav li:hover {
-  background-color: #f2f2f2;
+nav ul li a:hover {
+  background-color: #ffffff;
+  color: #1a2030;
 }
 
-h1 {
+
+.header {
+  background-color: #1b2130;
   text-align: center;
-  margin-top: 20px;
-  color: #212A3E;
+  padding: 20px;
 }
 
-h2 {
-  margin-top: 40px;
-  color: #394867;
+.header h1 {
+  color: #ffffff;
 }
+
+
+h1, h2 {
+  color: #ffffff;
+  margin-top: 30px;
+}
+
 
 p {
-  color: rgb(102, 102, 102);
-  line-height: 1.6;
   margin-bottom: 20px;
-  color: #7B8485;
 }
 
-ul, ol {
-  font-size: 1.6;
+a {
+  color: #00a8e8;
+  text-decoration: none;
 }
 
-li {
-  color: rgb(102, 102, 102);
-  margin-bottom: 12px;
-  color: #7B8485;
+a:hover {
+  text-decoration: underline;
 }
 
+/* Side bars */
+.side-bar {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100px;
+  background-color: #1b2130;
+  z-index: 1;
+}
+
+.left-bar {
+  left: 0;
+}
+
+.right-bar {
+  right: 0;
+}
+
+/* Content area */
+.content {
+  margin: 0px 120px;
+}
 img {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  border-radius: 5%;
 }
-
 .button-set {
   display: flex;
   margin-bottom: 10px;
@@ -81,6 +104,11 @@ img {
 .button {
   padding: 10px 20px;
   margin-right: 10px;
+  margin-top: 10px;
+  height: 60px;
+  width: 150px;
+  font-weight: bold;
+  font-size: 16px;
   background-color: #e0e0e0;
   border: none;
   cursor: pointer;
@@ -96,19 +124,24 @@ img {
 
 .submit-button {
   padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
   background-color: #4CAF50;
   border: none;
   color: white;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .message {
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: 100px;
   padding: 10px;
-  background-color: #f1f1f1;
+  background-color: #3cf;
   border: 1px solid #ccc;
   display: none;
+  font-weight: bold;
   transition: opacity 0.3s ease-in-out;
 }
+
