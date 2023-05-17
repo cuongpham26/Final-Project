@@ -10,7 +10,7 @@ body {
 
 nav {
   background-color: #1a2030;
-  padding: 10px;
+  padding: 30px;
   margin: 0px 100px;
 }
 
@@ -63,9 +63,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
 
 /* Side bars */
 .side-bar {
