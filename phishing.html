@@ -8,6 +8,8 @@
   <script src="phishing.js" defer></script>
 </head>
 <body>
+  <div class="side-bar left-bar"></div>
+  <div class="side-bar right-bar"></div>
 
     <nav>
       <ul>
@@ -18,6 +20,7 @@
         <li><a href="phishing.html">Phishing</a></li>
       </ul>
     </nav>
+    <div class="content">
     <h1>Phishing</h1>
 
     <p>Phishing is an extremely common online scam that tries to get your personal information. 
@@ -35,10 +38,10 @@
     <p><i>Hint: Hover over the links to see the link address</i></p>
 
 
-    <img src="images/netflix_phishing.png" usemap="#netflix" width="700">
+    <img src="images/netflix_phishing.png" usemap="#netflix" width="900">
 
     <map name="netflix">
-      <area shape="rect" coords="290,284, 414,316" onmouseover="netflix_link()" onmouseout="netflix_hide_link()">
+      <area shape="rect" coords="373,367, 534,409" onmouseover="netflix_link()" onmouseout="netflix_hide_link()">
     </map>
     <div id="netflix" class="message">
       http://netflixx.com/signinsettings
@@ -51,23 +54,23 @@
     
     <div id="alertContainer" class="alert-container"></div>
     <div id="hiddenWrong1" hidden>
-      <h3>Wrong</h3>
+      <h1>Wrong</h1>
       <p>This is actually a phishing email.
         You can see the URL of the link is misspelled as "netflixx" and its using http instead of the more secure https which are huge red flags. If you click the "Reset Password" button it will take you to a look-a-like Netflix website and ask you for your current password and then the new password.
           From this the people who sent this phishing email will get your password to Netflix and if you re-use passwords they will be able to log in to other accounts as well.
       </p>
     </div>
     <div id="hiddenCorrect1" hidden>
-      <h3>Correct!</h3>
+      <h1>Correct!</h1>
       <p>This is a phishing email.
         You can see the URL of the link is misspelled as "netflixx" and its using http instead of the more secure https which are huge red flags. If you click the "Reset Password" button it will take you to a look-a-like Netflix website and ask you for your current password and then the new password.
           From this the people who sent this phishing email will get your password to Netflix and if you re-use passwords they will be able to log in to other accounts as well.
 
       </p>
     </div>
-    <img src="images/google_phishing.png" usemap="#google" width="700">
+    <img src="images/google_phishing.png" usemap="#google" width="900">
     <map name="google">
-      <area shape="rect" coords="300,320, 400,345" onmouseover="google_link()" onmouseout="google_hide_link()">
+      <area shape="rect" coords="386,410, 515,445" onmouseover="google_link()" onmouseout="google_hide_link()">
     </map>
     <div id="google" class="message">
       https://google.com/amp/tinyurl.com/y7u8ewlr
@@ -78,7 +81,7 @@
       <button class="submit-button" onclick="submitSet(2)">submit</button>
     </div>
     <div id="hiddenWrong2" hidden>
-      <h3>Wrong</h3>
+      <h1>Wrong</h1>
       <p>This is actually a phishing email.
         If you click the "Check Activity" button it will take you to a look-a-like Google log in website and ask you to log in.
           From this the people who sent this phishing email will get access to your Google account.
@@ -87,7 +90,7 @@
       </p>
     </div>
     <div id="hiddenCorrect2" hidden>
-      <h3>Correct!</h3>
+      <h1>Correct!</h1>
       <p>This is a phishing email.
         If you click the "Check Activity" button it will take you to a look-a-like Google log in website and ask you to log in.
         From this the people who sent this phishing email will get access to your Google account.
@@ -96,9 +99,9 @@
       </p>
     </div>
 
-    <img src="images/one_pass_phishing.png" usemap="#onepass" width="750">
+    <img src="images/one_pass_phishing.png" usemap="#onepass" width="900">
     <map name="onepass">
-      <area shape="rect" coords="345,170, 490, 185" onmouseover="onepass_link()" onmouseout="onepass_hide_link()">
+      <area shape="rect" coords="414,204, 585, 218" onmouseover="onepass_link()" onmouseout="onepass_hide_link()">
     </map>
     <div id="onepass" class="message">
       https://www.onepass.com/resetpassword@is.gd/g3BTT1
@@ -109,7 +112,7 @@
       <button class="submit-button" onclick="submitSet(3)">submit</button>
     </div>
     <div id="hiddenWrong3" hidden>
-      <h3>Wrong</h3>
+      <h1>Wrong</h1>
       <p>This is actually a phishing email.
         The link is using URL masking to hide the real address of the link.
         Everything before the @ symbol will be ignored and you will be taken to "is.gd/g3BTT1".
@@ -118,7 +121,7 @@
       </p>
     </div>
     <div id="hiddenCorrect3" hidden>
-      <h3>Correct!</h3>
+      <h1>Correct!</h1>
       <p>This is a phishing email.
         The link is using URL masking to hide the real address of the link.
         Everything before the @ symbol will be ignored and you will be taken to "is.gd/g3BTT1".
@@ -128,9 +131,9 @@
     </div>
 
 
-    <img src="images/dropbox_phishing.png" usemap="#dropbox" width="700">
+    <img src="images/dropbox_phishing.png" usemap="#dropbox" width="900">
     <map name="dropbox">
-      <area shape="rect" coords="293,234, 408, 270" onmouseover="dropbox_link()" onmouseout="dropbox_hide_link()">
+      <area shape="rect" coords="375,303, 524, 346" onmouseover="dropbox_link()" onmouseout="dropbox_hide_link()">
     </map>
     <div id="dropbox" class="message">
       https://www.dropbox.com/buy
@@ -151,6 +154,7 @@
       <p>This is not a phishing email.
         The URL is a secure (https) link to dropbox.com which is the actual website for dropbox.
       </p>
+    </div>
     </div>
     </body>
 </html>
